@@ -28,6 +28,7 @@ pip3 install PyObjC
 6) Enter these commands to run the program in your Terminal:
 
 cd Desktop
+cd Hangman-main
 cd Hangman
 python3 Hangman.py
 
