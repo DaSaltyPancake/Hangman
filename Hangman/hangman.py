@@ -242,7 +242,7 @@ while True:
                             continue
                     spacer()
                     if user_guess.lower() in correct_word:
-                        for i in range(len(correct_word)):
+                        for i, _ in enumerate(correct_word):
                             if correct_word[i]==user_guess.lower():
                                 indx_lst.append(i)
                         for index in indx_lst:
@@ -277,7 +277,7 @@ while True:
                                 continue
                         spacer()
                         if user_guess.lower() in correct_word:
-                            for i in range(len(correct_word)):
+                            for i, _ in enumerate(correct_word):
                                 if correct_word[i]==user_guess.lower():
                                     indx_lst.append(i)
                             for index in indx_lst:
