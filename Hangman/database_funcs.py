@@ -36,7 +36,7 @@ def rand_word():
 def top_five_min():
     cur.execute('SELECT MIN(Streak) FROM (SELECT Streak FROM Leaderboard ORDER BY Streak DESC LIMIT 5)')
     row = cur.fetchone()
-    if row is None:
+    if row[0] is None:
         return(0)
     else:
         return(row[0])
